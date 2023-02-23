@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace SalesWebMVC.Models
+namespace SalesWebMvc.Models
 {
     public class SalesWebMvcContext : DbContext
     {
@@ -13,6 +13,8 @@ namespace SalesWebMVC.Models
         {
         }
 
-        public DbSet<SalesWebMVC.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
     }
 }
